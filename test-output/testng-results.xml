@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="2" total="19" passed="12" failed="0" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-20T14:28:02 IST" name="BankBotHackathonSuite" finished-at="2026-04-20T14:30:27 IST" duration-ms="144732">
+    <groups>
+    </groups>
+    <test started-at="2026-04-20T14:28:02 IST" name="AuthenticationAndCustomer" finished-at="2026-04-20T14:28:50 IST" duration-ms="48264">
+      <class name="com.srm.bankbot.tests.CustomerManagementTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:22 IST" name="setUp" finished-at="2026-04-20T14:28:24 IST" duration-ms="2614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCustomerAddressCanBeUpdated()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:24 IST" name="verifyCustomerAddressCanBeUpdated" finished-at="2026-04-20T14:28:31 IST" duration-ms="6724" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Edit Customer update page is unavailable on the live AUT right now.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Edit Customer update page is unavailable on the live AUT right now.
+at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+at com.srm.bankbot.pages.EditCustomerPage.updateAddress(EditCustomerPage.java:35)
+at com.srm.bankbot.tests.CustomerManagementTests.verifyCustomerAddressCanBeUpdated(CustomerManagementTests.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerAddressCanBeUpdated -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:31 IST" name="tearDown" finished-at="2026-04-20T14:28:31 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:31 IST" name="setUp" finished-at="2026-04-20T14:28:34 IST" duration-ms="2612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyDuplicateCustomerEmailShowsError()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:34 IST" name="verifyDuplicateCustomerEmailShowsError" finished-at="2026-04-20T14:28:37 IST" duration-ms="2805" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Unable to read row with label: Customer ID]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Unable to read row with label: Customer ID
+at com.srm.bankbot.pages.NewCustomerPage.readTableValue(NewCustomerPage.java:123)
+at com.srm.bankbot.pages.NewCustomerPage.createCustomer(NewCustomerPage.java:35)
+at com.srm.bankbot.tests.CustomerManagementTests.verifyDuplicateCustomerEmailShowsError(CustomerManagementTests.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateCustomerEmailShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:37 IST" name="tearDown" finished-at="2026-04-20T14:28:37 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:37 IST" name="setUp" finished-at="2026-04-20T14:28:39 IST" duration-ms="2401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDuplicateCustomerEmailShowsError()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:39 IST" name="verifyDuplicateCustomerEmailShowsError" finished-at="2026-04-20T14:28:44 IST" duration-ms="4887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateCustomerEmailShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:44 IST" name="tearDown" finished-at="2026-04-20T14:28:44 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:44 IST" name="setUp" finished-at="2026-04-20T14:28:47 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNewCustomerCreationGeneratesCustomerId()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:47 IST" name="verifyNewCustomerCreationGeneratesCustomerId" finished-at="2026-04-20T14:28:50 IST" duration-ms="3128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCustomerCreationGeneratesCustomerId -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.CustomerManagementTests@3fc2959f]" started-at="2026-04-20T14:28:50 IST" name="tearDown" finished-at="2026-04-20T14:28:50 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.bankbot.tests.CustomerManagementTests -->
+      <class name="com.srm.bankbot.tests.AuthenticationTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:02 IST" name="setUp" finished-at="2026-04-20T14:28:06 IST" duration-ms="4174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBlankLoginShowsValidationMessage()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:06 IST" name="verifyBlankLoginShowsValidationMessage" finished-at="2026-04-20T14:28:07 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlankLoginShowsValidationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:07 IST" name="tearDown" finished-at="2026-04-20T14:28:07 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:07 IST" name="setUp" finished-at="2026-04-20T14:28:10 IST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogoutRedirectsToLoginPage()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:10 IST" name="verifyLogoutRedirectsToLoginPage" finished-at="2026-04-20T14:28:14 IST" duration-ms="3979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutRedirectsToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:14 IST" name="tearDown" finished-at="2026-04-20T14:28:14 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:14 IST" name="setUp" finished-at="2026-04-20T14:28:16 IST" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyManagerLoginScenarios(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:16 IST" name="verifyManagerLoginScenarios" data-provider="loginData" finished-at="2026-04-20T14:28:18 IST" duration-ms="1400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[validManagerLogin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManagerLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:18 IST" name="tearDown" finished-at="2026-04-20T14:28:18 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:18 IST" name="setUp" finished-at="2026-04-20T14:28:20 IST" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyManagerLoginScenarios(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:20 IST" name="verifyManagerLoginScenarios" data-provider="loginData" finished-at="2026-04-20T14:28:22 IST" duration-ms="1261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidManagerLogin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalidManager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalidPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManagerLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AuthenticationTests@36fc695d]" started-at="2026-04-20T14:28:22 IST" name="tearDown" finished-at="2026-04-20T14:28:22 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.bankbot.tests.AuthenticationTests -->
+    </test> <!-- AuthenticationAndCustomer -->
+    <test started-at="2026-04-20T14:28:50 IST" name="AccountAndTransfer" finished-at="2026-04-20T14:30:27 IST" duration-ms="96149">
+      <class name="com.srm.bankbot.tests.AccountManagementTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:28:50 IST" name="setUp" finished-at="2026-04-20T14:28:53 IST" duration-ms="2474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyAccountTypeCanBeEdited()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:28:53 IST" name="verifyAccountTypeCanBeEdited" finished-at="2026-04-20T14:29:20 IST" duration-ms="26581" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: a_type (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Deepika\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63648}, goog:processID: 17204, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63648/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a992df0641e57bbee0ac982ea74b2d9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: a_type (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.57, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Deepika\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63648}, goog:processID: 17204, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63648/devtoo..., se:cdpVersion: 147.0.7727.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a992df0641e57bbee0ac982ea74b2d9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.srm.bankbot.base.BasePage.waitForVisibility(BasePage.java:42)
+at com.srm.bankbot.base.BasePage.selectByVisibleText(BasePage.java:78)
+at com.srm.bankbot.pages.EditAccountPage.updateAccountType(EditAccountPage.java:28)
+at com.srm.bankbot.tests.AccountManagementTests.verifyAccountTypeCanBeEdited(AccountManagementTests.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountTypeCanBeEdited -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:20 IST" name="tearDown" finished-at="2026-04-20T14:29:20 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:20 IST" name="setUp" finished-at="2026-04-20T14:29:22 IST" duration-ms="2457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAccountTypeCanBeEdited()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:22 IST" name="verifyAccountTypeCanBeEdited" finished-at="2026-04-20T14:29:30 IST" duration-ms="7798" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Edit Account page is unavailable on the live AUT right now.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Edit Account page is unavailable on the live AUT right now.
+at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+at com.srm.bankbot.pages.EditAccountPage.loadAccount(EditAccountPage.java:23)
+at com.srm.bankbot.tests.AccountManagementTests.verifyAccountTypeCanBeEdited(AccountManagementTests.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountTypeCanBeEdited -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:30 IST" name="tearDown" finished-at="2026-04-20T14:29:30 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:30 IST" name="setUp" finished-at="2026-04-20T14:29:33 IST" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidCustomerIdShowsAccountCreationError()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:33 IST" name="verifyInvalidCustomerIdShowsAccountCreationError" finished-at="2026-04-20T14:29:36 IST" duration-ms="2983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidCustomerIdShowsAccountCreationError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:36 IST" name="tearDown" finished-at="2026-04-20T14:29:36 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:36 IST" name="setUp" finished-at="2026-04-20T14:29:39 IST" duration-ms="3021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNewAccountCreationGeneratesAccountNumber()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:39 IST" name="verifyNewAccountCreationGeneratesAccountNumber" finished-at="2026-04-20T14:29:45 IST" duration-ms="6382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewAccountCreationGeneratesAccountNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.AccountManagementTests@66d18979]" started-at="2026-04-20T14:29:45 IST" name="tearDown" finished-at="2026-04-20T14:29:45 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.bankbot.tests.AccountManagementTests -->
+      <class name="com.srm.bankbot.tests.FormValidationTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:12 IST" name="setUp" finished-at="2026-04-20T14:30:15 IST" duration-ms="2291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDateOfBirthRejectsFutureDates()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:15 IST" name="verifyDateOfBirthRejectsFutureDates" finished-at="2026-04-20T14:30:17 IST" duration-ms="2147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDateOfBirthRejectsFutureDates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:17 IST" name="tearDown" finished-at="2026-04-20T14:30:17 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:17 IST" name="setUp" finished-at="2026-04-20T14:30:19 IST" duration-ms="2393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNewCustomerFormRejectsEmptyFields()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:19 IST" name="verifyNewCustomerFormRejectsEmptyFields" finished-at="2026-04-20T14:30:22 IST" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCustomerFormRejectsEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:22 IST" name="tearDown" finished-at="2026-04-20T14:30:22 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:22 IST" name="setUp" finished-at="2026-04-20T14:30:24 IST" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNumericFieldRejectsNonNumericValues()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:24 IST" name="verifyNumericFieldRejectsNonNumericValues" finished-at="2026-04-20T14:30:26 IST" duration-ms="2262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumericFieldRejectsNonNumericValues -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.FormValidationTests@609cd4d8]" started-at="2026-04-20T14:30:26 IST" name="tearDown" finished-at="2026-04-20T14:30:27 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.bankbot.tests.FormValidationTests -->
+      <class name="com.srm.bankbot.tests.FundTransferTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:29:45 IST" name="setUp" finished-at="2026-04-20T14:29:48 IST" duration-ms="2344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFundTransferSuccessAndBalanceUpdate()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:29:48 IST" name="verifyFundTransferSuccessAndBalanceUpdate" finished-at="2026-04-20T14:29:57 IST" duration-ms="9677" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Balance Enquiry page is unavailable on the live AUT right now.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Balance Enquiry page is unavailable on the live AUT right now.
+at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+at com.srm.bankbot.pages.BalanceEnquiryPage.fetchBalance(BalanceEnquiryPage.java:23)
+at com.srm.bankbot.tests.FundTransferTests.verifyFundTransferSuccessAndBalanceUpdate(FundTransferTests.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFundTransferSuccessAndBalanceUpdate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:29:57 IST" name="tearDown" finished-at="2026-04-20T14:29:58 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:29:58 IST" name="setUp" finished-at="2026-04-20T14:30:01 IST" duration-ms="2937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidPayeeAccountShowsError()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:30:01 IST" name="verifyInvalidPayeeAccountShowsError" finished-at="2026-04-20T14:30:12 IST" duration-ms="11591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPayeeAccountShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.bankbot.tests.FundTransferTests@bccb269]" started-at="2026-04-20T14:30:12 IST" name="tearDown" finished-at="2026-04-20T14:30:12 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.bankbot.tests.FundTransferTests -->
+    </test> <!-- AccountAndTransfer -->
+  </suite> <!-- BankBotHackathonSuite -->
+</testng-results>

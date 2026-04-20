@@ -1,0 +1,5 @@
+# Created at 2026-04-20T13:51:28.873
+Boot Manifest-JAR contains absolute paths in classpath 'E:\eclipse\eclipse\BankBot\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

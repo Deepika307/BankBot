@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">BankBotHackathonSuite</th></tr>
+<tr><td><a href="#t0">AuthenticationAndCustomer</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">44,401</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">AccountAndTransfer</a></td><td class="num">6</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">0</td><td class="num">75,509</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">12</th><th class="num attn">3</th><th class="num attn">1</th><th class="num">0</th><th class="num">119,910</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BankBotHackathonSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AuthenticationAndCustomer &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.srm.bankbot.tests.CustomerManagementTests</td><td><a href="#m0">verifyCustomerAddressCanBeUpdated</a></td><td rowspan="1">1776675031599</td><td rowspan="1">7151</td></tr><tr><th colspan="4">AuthenticationAndCustomer &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.srm.bankbot.tests.AuthenticationTests</td><td><a href="#m1">verifyBlankLoginShowsValidationMessage</a></td><td rowspan="1">1776675014191</td><td rowspan="1">546</td></tr><tr class="passedeven"><td><a href="#m2">verifyLogoutRedirectsToLoginPage</a></td><td rowspan="1">1776675017339</td><td rowspan="1">3689</td></tr><tr class="passedeven"><td><a href="#m3">verifyManagerLoginScenarios</a></td><td rowspan="2">1776675027835</td><td rowspan="2">1234</td></tr><tr class="passedeven"><td><a href="#m4">verifyManagerLoginScenarios</a></td></tr><tr class="passedodd"><td rowspan="2">com.srm.bankbot.tests.CustomerManagementTests</td><td><a href="#m5">verifyDuplicateCustomerEmailShowsError</a></td><td rowspan="1">1776675041415</td><td rowspan="1">5449</td></tr><tr class="passedodd"><td><a href="#m6">verifyNewCustomerCreationGeneratesCustomerId</a></td><td rowspan="1">1776675049554</td><td rowspan="1">3493</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">AccountAndTransfer &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.srm.bankbot.tests.AccountManagementTests</td><td><a href="#m7">verifyAccountTypeCanBeEdited</a></td><td rowspan="1">1776675062516</td><td rowspan="1">9117</td></tr><tr class="skippedodd"><td rowspan="1">com.srm.bankbot.tests.FundTransferTests</td><td><a href="#m8">verifyFundTransferSuccessAndBalanceUpdate</a></td><td rowspan="1">1776675090016</td><td rowspan="1">10488</td></tr><tr><th colspan="4">AccountAndTransfer &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">com.srm.bankbot.tests.AccountManagementTests</td><td><a href="#m9">verifyAccountTypeCanBeEdited</a></td><td rowspan="1">1776675056018</td><td rowspan="1">2674</td></tr><tr><th colspan="4">AccountAndTransfer &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.srm.bankbot.tests.AccountManagementTests</td><td><a href="#m10">verifyInvalidCustomerIdShowsAccountCreationError</a></td><td rowspan="1">1776675074640</td><td rowspan="1">4013</td></tr><tr class="passedeven"><td><a href="#m11">verifyNewAccountCreationGeneratesAccountNumber</a></td><td rowspan="1">1776675081106</td><td rowspan="1">6169</td></tr><tr class="passedodd"><td rowspan="3">com.srm.bankbot.tests.FormValidationTests</td><td><a href="#m12">verifyDateOfBirthRejectsFutureDates</a></td><td rowspan="1">1776675115848</td><td rowspan="1">2043</td></tr><tr class="passedodd"><td><a href="#m13">verifyNewCustomerFormRejectsEmptyFields</a></td><td rowspan="1">1776675120488</td><td rowspan="1">3076</td></tr><tr class="passedodd"><td><a href="#m14">verifyNumericFieldRejectsNonNumericValues</a></td><td rowspan="1">1776675126319</td><td rowspan="1">2593</td></tr><tr class="passedeven"><td rowspan="1">com.srm.bankbot.tests.FundTransferTests</td><td><a href="#m15">verifyInvalidPayeeAccountShowsError</a></td><td rowspan="1">1776675103201</td><td rowspan="1">9953</td></tr></tbody>
+</table>
+<h2>AuthenticationAndCustomer</h2><h3 id="m0">com.srm.bankbot.tests.CustomerManagementTests#verifyCustomerAddressCanBeUpdated</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Edit Customer update page is unavailable on the live AUT right now.
+	at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+	at com.srm.bankbot.pages.EditCustomerPage.updateAddress(EditCustomerPage.java:35)
+	at com.srm.bankbot.tests.CustomerManagementTests.verifyCustomerAddressCanBeUpdated(CustomerManagementTests.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.srm.bankbot.tests.AuthenticationTests#verifyBlankLoginShowsValidationMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.srm.bankbot.tests.AuthenticationTests#verifyLogoutRedirectsToLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.srm.bankbot.tests.AuthenticationTests#verifyManagerLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>invalidManagerLogin</td><td>false</td><td>invalidManager</td><td>invalidPassword</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.srm.bankbot.tests.AuthenticationTests#verifyManagerLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>validManagerLogin</td><td>true</td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.srm.bankbot.tests.CustomerManagementTests#verifyDuplicateCustomerEmailShowsError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.srm.bankbot.tests.CustomerManagementTests#verifyNewCustomerCreationGeneratesCustomerId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AccountAndTransfer</h2><h3 id="m7">com.srm.bankbot.tests.AccountManagementTests#verifyAccountTypeCanBeEdited</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Edit Account page is unavailable on the live AUT right now.
+	at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+	at com.srm.bankbot.pages.EditAccountPage.loadAccount(EditAccountPage.java:23)
+	at com.srm.bankbot.tests.AccountManagementTests.verifyAccountTypeCanBeEdited(AccountManagementTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.srm.bankbot.tests.FundTransferTests#verifyFundTransferSuccessAndBalanceUpdate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Balance Enquiry page is unavailable on the live AUT right now.
+	at com.srm.bankbot.base.BasePage.skipIfPageUnavailable(BasePage.java:131)
+	at com.srm.bankbot.pages.BalanceEnquiryPage.fetchBalance(BalanceEnquiryPage.java:23)
+	at com.srm.bankbot.tests.FundTransferTests.verifyFundTransferSuccessAndBalanceUpdate(FundTransferTests.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.srm.bankbot.tests.AccountManagementTests#verifyAccountTypeCanBeEdited</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: Unable to read row with label: Customer ID
+	at com.srm.bankbot.pages.NewCustomerPage.readTableValue(NewCustomerPage.java:123)
+	at com.srm.bankbot.pages.NewCustomerPage.createCustomer(NewCustomerPage.java:35)
+	at com.srm.bankbot.tests.AccountManagementTests.verifyAccountTypeCanBeEdited(AccountManagementTests.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.srm.bankbot.tests.AccountManagementTests#verifyInvalidCustomerIdShowsAccountCreationError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.srm.bankbot.tests.AccountManagementTests#verifyNewAccountCreationGeneratesAccountNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.srm.bankbot.tests.FormValidationTests#verifyDateOfBirthRejectsFutureDates</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.srm.bankbot.tests.FormValidationTests#verifyNewCustomerFormRejectsEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.srm.bankbot.tests.FormValidationTests#verifyNumericFieldRejectsNonNumericValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.srm.bankbot.tests.FundTransferTests#verifyInvalidPayeeAccountShowsError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+com\srm\bankbot\tests\AuthenticationTests.class
+com\srm\bankbot\tests\CustomerManagementTests.class
+com\srm\bankbot\tests\FundTransferTests.class
+com\srm\bankbot\tests\AccountManagementTests.class
+com\srm\bankbot\tests\FormValidationTests.class

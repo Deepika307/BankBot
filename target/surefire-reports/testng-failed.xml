@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BankBotHackathonSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.srm.bankbot.listeners.RetryTransformer"/>
+  </listeners>
+  <test thread-count="5" name="AuthenticationAndCustomer(failed)" verbose="0">
+    <classes>
+      <class name="com.srm.bankbot.tests.CustomerManagementTests">
+        <methods>
+          <include name="verifyCustomerAddressCanBeUpdated"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.srm.bankbot.tests.CustomerManagementTests -->
+    </classes>
+  </test> <!-- AuthenticationAndCustomer(failed) -->
+  <test thread-count="5" name="AccountAndTransfer(failed)" verbose="0">
+    <classes>
+      <class name="com.srm.bankbot.tests.AccountManagementTests">
+        <methods>
+          <include name="verifyAccountTypeCanBeEdited"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.srm.bankbot.tests.AccountManagementTests -->
+      <class name="com.srm.bankbot.tests.FundTransferTests">
+        <methods>
+          <include name="verifyFundTransferSuccessAndBalanceUpdate"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.srm.bankbot.tests.FundTransferTests -->
+    </classes>
+  </test> <!-- AccountAndTransfer(failed) -->
+</suite> <!-- Failed suite [BankBotHackathonSuite] -->

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="BankBotHackathonSuite">
+    <listeners>
+        <listener class-name="com.srm.bankbot.listeners.RetryTransformer"/>
+    </listeners>
+    <test name="AuthenticationAndCustomer">
+        <classes>
+            <class name="com.srm.bankbot.tests.AuthenticationTests"/>
+            <class name="com.srm.bankbot.tests.CustomerManagementTests"/>
+        </classes>
+    </test>
+    <test name="AccountAndTransfer">
+        <classes>
+            <class name="com.srm.bankbot.tests.AccountManagementTests"/>
+            <class name="com.srm.bankbot.tests.FundTransferTests"/>
+            <class name="com.srm.bankbot.tests.FormValidationTests"/>
+        </classes>
+    </test>
+</suite>
