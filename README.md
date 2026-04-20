@@ -28,7 +28,6 @@ This project was built as part of a hackathon to demonstrate skills in automatio
 
 ---
 
-## 📂 Project Structure
 
 ## 📂 Project Structure
 
